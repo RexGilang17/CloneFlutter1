@@ -14,15 +14,15 @@ class CustomAppBar extends StatelessWidget {
       children: [
         Container(
           decoration: BoxDecoration(
-            color: Colors.pink,
+            color: Color.fromARGB(255, 104, 159, 255),
             borderRadius: BorderRadius.circular(20),
           ),
           //Drawer Icon
           child: Builder(
             builder: (context) => IconButton(
               icon: Icon(
-                Icons.dashboard,
-                color: kPrimaryColor,
+                Icons.logo_dev,
+                // color: kPrimaryColor,
               ),
               onPressed: () {
                 Scaffold.of(context).openDrawer();
@@ -43,6 +43,12 @@ class CustomAppBar extends StatelessWidget {
         ),
         CircleAvatar(
           backgroundColor: kPrimaryColor,
+        ),
+        Icon(
+          Icons.notifications,
+          color: Color(Colors.w),
+
+          // color: kPrimaryColor,
         ),
       ],
     );

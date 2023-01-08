@@ -17,7 +17,7 @@ class _HomeBodyState extends State<HomeBody> {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Column(
+          child: ListView(
             children: [
               CustomAppBar(),
 
@@ -31,7 +31,7 @@ class _HomeBodyState extends State<HomeBody> {
                 height: 20,
               ),
 
-              ProductSlider()
+              ProductSlider(),
             ],
           ),
         ),

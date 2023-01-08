@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_layout_blibli/Pages/home_body.dart';
+import 'package:flutter_layout_blibli/constants.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -9,15 +11,8 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Row(
-            children: [],
-          )
-        ],
-      ), 
-
-      drawer: Drawer(),
+      backgroundColor: kBGColor,
+      body: HomeBody(),
     );
   }
 }
