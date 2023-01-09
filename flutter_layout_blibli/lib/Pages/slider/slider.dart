@@ -32,6 +32,7 @@ class _ProductSliderState extends State<ProductSlider> {
           ),
         ),
       ),
+    
     );
   }
 }

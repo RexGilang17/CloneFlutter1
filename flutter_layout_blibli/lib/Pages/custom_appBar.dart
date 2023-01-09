@@ -32,6 +32,7 @@ class CustomAppBar extends StatelessWidget {
         ),
         Column(
           children: [
+            
             //User
             Text('Gilang'),
             //Location
@@ -39,6 +40,7 @@ class CustomAppBar extends StatelessWidget {
               'Kota Tangerang',
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
             ),
+            
           ],
         ),
         CircleAvatar(
@@ -46,7 +48,7 @@ class CustomAppBar extends StatelessWidget {
         ),
         Icon(
           Icons.notifications,
-          color: Color(Colors.w),
+          // color: Color(Colors.w),
 
           // color: kPrimaryColor,
         ),

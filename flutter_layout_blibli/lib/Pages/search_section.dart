@@ -16,7 +16,7 @@ class SearchBar extends StatelessWidget {
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Colors.blue,
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
                     BoxShadow(
@@ -47,9 +47,7 @@ class SearchBar extends StatelessWidget {
               decoration: BoxDecoration(
                   color: kPrimaryColor,
                   borderRadius: BorderRadius.circular(20),
-                  boxShadow: [
-                    BoxShadow(color: Colors.black38, blurRadius: 4)
-                  ]),
+                  boxShadow: [BoxShadow(color: Colors.black38, blurRadius: 4)]),
               child: IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.sort_by_alpha),
@@ -66,4 +64,3 @@ class SearchBar extends StatelessWidget {
     );
   }
 }
-
