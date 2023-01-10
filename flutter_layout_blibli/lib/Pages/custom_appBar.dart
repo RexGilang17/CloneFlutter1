@@ -12,39 +12,31 @@ class CustomAppBar extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Container(
-          decoration: BoxDecoration(
-            color: Color.fromARGB(255, 104, 159, 255),
-            borderRadius: BorderRadius.circular(20),
-          ),
-          //Drawer Icon
-          child: Builder(
-            builder: (context) => IconButton(
-              icon: Icon(
-                Icons.logo_dev,
-                // color: kPrimaryColor,
-              ),
-              onPressed: () {
-                Scaffold.of(context).openDrawer();
-              },
-            ),
-          ),
-        ),
-        Column(
+        Row(
           children: [
-            
-            //User
-            Text('Gilang'),
-            //Location
+            Container(
+              decoration: BoxDecoration(
+                color: Color.fromARGB(255, 104, 159, 255),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              //Drawer Icon
+              child: Builder(
+                builder: (context) => IconButton(
+                  icon: Icon(
+                    Icons.logo_dev,
+                    // color: kPrimaryColor,
+                  ),
+                  onPressed: () {
+                    Scaffold.of(context).openDrawer();
+                  },
+                ),
+              ),
+            ),
             Text(
-              'Kota Tangerang',
+              'Nama Toko',
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
             ),
-            
           ],
-        ),
-        CircleAvatar(
-          backgroundColor: kPrimaryColor,
         ),
         Icon(
           Icons.notifications,

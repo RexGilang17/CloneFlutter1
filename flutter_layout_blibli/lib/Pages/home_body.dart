@@ -59,7 +59,7 @@ class _HomeBodyState extends State<HomeBody> {
                   icon: pageIndex == 0
                       ? const FaIcon(
                           FontAwesomeIcons.house,
-                          color: Colors.amber,
+                          color: Colors.blueAccent,
                           size: 35,
                         )
                       : const FaIcon(
@@ -68,7 +68,7 @@ class _HomeBodyState extends State<HomeBody> {
                           size: 35,
                         ),
                 ),
-                Text("Beranda")
+                Text("Dashboard")
               ],
             ),
           ),
@@ -85,7 +85,7 @@ class _HomeBodyState extends State<HomeBody> {
                     icon: pageIndex == 1
                         ? const FaIcon(
                             FontAwesomeIcons.wallet,
-                            color: Colors.amber,
+                            color: Colors.blueAccent,
                             size: 35,
                           )
                         : const FaIcon(
@@ -93,7 +93,7 @@ class _HomeBodyState extends State<HomeBody> {
                             color: Colors.grey,
                             size: 35,
                           )),
-                Text("Kantong")
+                Text("Produk")
               ],
             ),
           ),
@@ -110,7 +110,7 @@ class _HomeBodyState extends State<HomeBody> {
                     icon: pageIndex == 2
                         ? const FaIcon(
                             FontAwesomeIcons.addressBook,
-                            color: Colors.amber,
+                            color: Colors.blueAccent,
                             size: 35,
                           )
                         : const FaIcon(
@@ -118,7 +118,7 @@ class _HomeBodyState extends State<HomeBody> {
                             color: Colors.grey,
                             size: 35,
                           )),
-                Text("Kontak")
+                Text("Pesanan")
               ],
             ),
           ),
@@ -135,7 +135,7 @@ class _HomeBodyState extends State<HomeBody> {
                     icon: pageIndex == 3
                         ? const FaIcon(
                             FontAwesomeIcons.creditCard,
-                            color: Colors.amber,
+                            color: Colors.blueAccent,
                             size: 35,
                           )
                         : const FaIcon(
@@ -143,7 +143,7 @@ class _HomeBodyState extends State<HomeBody> {
                             color: Colors.grey,
                             size: 35,
                           )),
-                Text("Kartu")
+                Text("Chat")
               ],
             ),
           ),
@@ -160,7 +160,7 @@ class _HomeBodyState extends State<HomeBody> {
                     icon: pageIndex == 4
                         ? const FaIcon(
                             FontAwesomeIcons.ellipsis,
-                            color: Colors.amber,
+                            color: Colors.blueAccent,
                             size: 35,
                           )
                         : const FaIcon(

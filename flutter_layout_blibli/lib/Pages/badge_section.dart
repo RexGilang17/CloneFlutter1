@@ -27,6 +27,8 @@ class _BadgeState extends State<Badge> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Column(
+            // mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
@@ -51,14 +53,21 @@ class _BadgeState extends State<Badge> {
                 "Tingkatkan performa untuk mencapai badge selanjutnya",
                 style: TextStyle(color: Colors.white),
               ),
-              OutlinedButton(
-                style: OutlinedButton.styleFrom(
-                    side: BorderSide(color: Colors.white)),
-                onPressed: (() {}),
-                child: Text(
-                  "Selengkapnya",
-                  style: TextStyle(color: Colors.white),
-                ),
+              SizedBox(
+                height: 15,
+              ),
+              Row(
+                children: [
+                  OutlinedButton(
+                    style: OutlinedButton.styleFrom(
+                        side: BorderSide(color: Colors.white)),
+                    onPressed: (() {}),
+                    child: Text(
+                      "Selengkapnya",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
