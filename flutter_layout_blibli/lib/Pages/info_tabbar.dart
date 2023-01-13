@@ -8,36 +8,39 @@ class TabInfo extends StatefulWidget {
 class _TabInfoState extends State<TabInfo> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 200, vertical: 20),
-        child: Column(
-          children: [
-            Container(
-              height: 100,
-              width: 100,
-              color: Colors.blue,
+    return DefaultTabController(
+      length: 2,
+      initialIndex: 0,
+      child: Column(
+        children: [
+          // Container(
+          //   height: 100,
+          //   width: 100,
+          //   color: Colors.blue,
+          // ),
+          Container(
+            decoration: BoxDecoration(
+                color: Color.fromARGB(255, 192, 191, 196),
+                borderRadius: BorderRadius.circular(10)),
+            child: TabBar(
+              indicator: BoxDecoration(
+                  color: Colors.blueAccent,
+                  borderRadius: BorderRadius.circular(8)),
+              tabs: [
+                Tab(
+                  text: 'Butuh Tindakan',
+                ),
+                Tab(
+                  text: 'Butuh Di Cek',
+                ),
+                Tab(text: 'Analisis'),
+              ],
             ),
-            Container(
-              decoration: BoxDecoration(
-                  color: Color(0xFF292639),
-                  borderRadius: BorderRadius.circular(10)),
-              child: TabBar(
-                  indicator: BoxDecoration(
-                      color: Colors.blueAccent,
-                      borderRadius: BorderRadius.circular(8)),
-                  tabs: [
-                    Tab(
-                      text: 'Month',
-                    ),
-                    Tab(
-                      text: 'Year',
-                    )
-                  ]),
-            ),
-            SizedBox(
-              height: 300,
-              child: TabBarView(children: [
+          ),
+          SizedBox(
+            height: 300,
+            child: TabBarView(
+              children: [
                 Container(
                   height: 100,
                   width: 100,
@@ -49,10 +52,10 @@ class _TabInfoState extends State<TabInfo> {
                 Container(
                   child: Text('2021'),
                 ),
-              ]),
-            )
-          ],
-        ),
+              ],
+            ),
+          )
+        ],
       ),
     );
   }

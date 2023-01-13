@@ -216,7 +216,7 @@ class Page1 extends StatelessWidget {
               // SizedBox(
               //   height: 10,
               // ),
-              // TabInfo()
+              TabInfo()
               // Category(),
             ],
           ),
